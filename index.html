@@ -28,8 +28,8 @@
     margin:auto;
   }
   #form{
-    width:360px;
-    height:500px;
+    width:320px;
+    height:600px;
     border-left:10px solid rgb(0, 132, 255);
     border-top:10px solid rgb(0, 132, 255);
     
@@ -39,6 +39,18 @@
       margin: auto;
       text-align:left;
   }
+  @media only screen and (max-width: 800px) {
+  .main-class{
+    float:right;
+    padding-left:-20px;
+  }  
+}
+vertical-scroll{
+ 
+  overflow-y:scroll;
+  width:100px;
+  height:600px;
+}
  
    
      
@@ -68,91 +80,108 @@
                 
                             
          </nav> 
-         </div>
+      </div>
          <!-- This dv for GUI -->
-
-         <div class="row">
-           <!-- div for About Prettynotes -->
-           <div class="col-3 d-none d-md-block" id="left">
-             <p>This center is for About Prettynotes and their uses</p>
-
-           </div>
-
-
-
-           
-           <!-- div for Prettynotes Signup and login form -->
-           <div class="col-7 text-center" id="form-align">
-              <h4 class="text-center"><i class="fa  fa-quote-left" aria-hidden="true"></i> The best part of learning is <br>sharing what we know <i class="fa fa-.5x fa-quote-right" aria-hidden="true"></i></h4>
-              <div id="form">
-                <h2>PrettyNotes</h2>
+         <div class="container">
+         
+            <div class="row">
                 
-                <form>
-                <div class="row">
-                            <div id="col-2">
-                           
-                            </div>
-                            <div class="col-8" id="form-align">
-
-                            
-                                <div class="form-group" >
-                                  <label for="exampleInputEmail1"><b>Email address</b></label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                  <small id="emailHelp" class="form-text text-muted"><i class="fa fa-handshake-o" aria-hidden="true"></i> We'll never share your email,Pinky Promise :)</small>
-                                </div>
-                                <div class="form-group">
-                                  <label for="exampleInputPassword1"><b>Password</b></label>
-                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                </div>
+     
+     
+     
+                
+                <!-- div for Prettynotes Signup and login form -->
+                <div class="col-9 text-center main-class" id="form-align">
+                   <h4 class="text-center"><i class="fa  fa-quote-left" aria-hidden="true"></i> The best part of learning is <br>sharing what we know <i class="fa fa-.5x fa-quote-right" aria-hidden="true"></i></h4>
+                   <div id="form">
+                     <h2>PrettyNotes</h2>
+                     
+                     <form>
+                     <div class="row">
+                                 <div id="col-2">
                                 
-                                
-                                
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1"><b>Your College</b></label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                      <option>Galgotia college Gr.Noida</option>
-                                      <option>NIET Gr.Noida</option>
-                                      <option>GNIOT Gr.Noida</option>
-                                      
-                                    </select>
+                                 </div>
+                                 <div class="col-8" id="form-align">
+     
+                                 
+                                     <div class="form-group" >
+                                       <label for="exampleInputEmail1"><b>Email address</b></label>
+                                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                       <small id="emailHelp" class="form-text text-muted"><i class="fa fa-handshake-o" aria-hidden="true"></i> We'll never share your email,Pinky Promise :)</small>
+                                     </div>
+                                     <div class="form-group">
+                                       <label for="exampleInputPassword1"><b>Password</b></label>
+                                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                     </div>
+                                     
+                                     
+                                     
+                                     <div class="form-group">
+                                         <label for="exampleFormControlSelect1"><b>Your College</b></label>
+                                         <select class="form-control " id="exampleFormControlSelect1">
+                                           <option>Galgotia college Gr.Noida</option>
+                                           <option>Galgotia University</option>
+                                           <option>NIET Gr.Noida</option>
+                                           
+                                           
+                                         </select>
+                                       </div>
+                                       <label class="custom-control custom-radio">
+                                           <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                                           <span class="custom-control-indicator"></span>
+                                           <span class="custom-control-description">Student</span>
+                                         </label>
+                                         <label class="custom-control custom-radio">
+                                           <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                           <span class="custom-control-indicator"></span>
+                                           <span class="custom-control-description">Faculty</span>
+                                         </label>
+                                       <div class="form-group">
+                                           <label for="exampleInputPassword1"><b>Mobile-Number</b></label>
+                                           <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Mobile Number">
+                                         </div>
+                                         <a class="btn btn-primary" href="#" role="button">Signup</a>
+                                       <h2 right>OR</h2>
+                                       <div class="row">
+                                         <div class="col-6">
+                                             <a role="button" href="#" class="btn btn-primary"><i class="fa fa-1x fa-facebook" aria-hidden="true"></i> Signup</a>
+                                         </div>
+                                         <div class="col-6">
+                                             <a role="button" href="#" class="btn btn-primary"><i class="fa fa-1x fa-google" aria-hidden="true"></i> Signup</a>
+                                         </div>
+                                       </div>
+                                   </form>
+     
                                   </div>
-                                  <div class="form-group">
-                                      <label for="exampleInputPassword1"><b>Mobile-Number</b></label>
-                                      <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Mobile Number">
-                                    </div>
-                                  <button type="submit" class="btn btn-primary">Submit</button>
-                                  <h2 text-center>OR</h2>
-                                  <div class="row">
-                                    <div class="col-6">
-                                        <button type="button" class="btn btn-primary"><i class="fa fa-1x fa-facebook" aria-hidden="true"></i> Signup</button>
-                                    </div>
-                                    <div class="col-6">
-                                        <button type="button" class="btn btn-primary"><i class="fa fa-1x fa-google" aria-hidden="true"></i> Signup</button>
-                                    </div>
-                                  </div>
-                              </form>
-
-                             </div>
-                            <div class="col-2">
-
-                            </div>
-                </div>
+                                 <div class="col-2">
+     
+                                 </div>
+                     </div>
+                     </div>
+                     </div>
+                     
+      
+                     
+                 </div>
+     
+     
+     
+                <!-- div for Prettynotes Newsfeed and upcoming Ongoing things in college -->
+                <div class="col-3 d-none d-md-block" id="right">
+                
+                   
                 </div>
                 
- 
-                
-            </div>
+     
+             
 
-
-
-           <!-- div for Prettynotes Newsfeed and upcoming Ongoing things in college -->
-           <div class="col-2 d-none d-md-block" id="right">
-              <p>This section for New notes uploaded and Upcoming events in colleges and other notifications News feed basically</p>
-               
-           </div>
 
          </div>
+
+         
+         
     </div>
+    
         
 
     </body>
