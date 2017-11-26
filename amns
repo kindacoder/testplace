@@ -1,0 +1,1 @@
+var a = document.getElementsByClassName("_5u3n"); for (var i = 0; i < a.length; i++){ a[i].click(); }
